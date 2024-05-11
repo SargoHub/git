@@ -78,6 +78,15 @@ git remote add <local name> <remote repo path>
   adding the remote repo to the local git repo. the local name is like a mic name given to the remote github repo for ease
 git push -u <local name> <branch name>
   to push the files from the local git repo to the remote gitHub repo
+git fetch <local name>  
+  to compare local git repo and the remote github repo 
+git pull <local name> 
+  to download the new files to local git repo
+git clone <remore repo URL>
+  to download the complete repo from the remote repo to local machine
+
+
+
 
 
 
