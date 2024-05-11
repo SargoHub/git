@@ -31,4 +31,58 @@ git restore --stagged file.txt
 git restore file.txt
   to restore the stagged file
 
+IF YOU DON'T WANT GIT TO TRACK A FILE (lets say abc.txt)-
+create a file .gitignore
+git add .gitignore
+  to stage the file
+git commit -m "msg"
+  to commit the file
+git vi .gitignore
+  edit the content and add the file name abc.txt in it
+git add .gitignore
+  stage it again
+git commit -m "msg"
+  commit again
+git will not show you untracked error for abc.txt
+
+GIT BRANCHING -
+git branch
+  to list the branches
+git branch <newbranchname> <mainbranchname>
+  to create a new branch
+git checkout <branchname>
+  to switch to other branch
+touch newfeature.txt
+  to create a new file in the new branch
+git add newfeature.txt
+  to stage it in new branch
+git commit -m "msg"
+  to commit it in new branch
+git merge <newbranchname>
+  to merge the new branch with the master branch (use this command in the master branch)
+git branch -d <branchname>
+  to delete a branch
+
+GIT STASHING -
+git stash -u
+  to stash/hide all the untracked files grom Git
+git stash
+  to stash the tracked files
+git stash pop
+  to unhide the files
+git stash list
+  to list the stashed files
+
+ADDING REMOTE (GITHUB) REPO TO LOCAL (GIT) REPO - 
+git remote add <local name> <remote repo path>  
+  adding the remote repo to the local git repo. the local name is like a mic name given to the remote github repo for ease
+git push -u <local name> <branch name>
+  to push the files from the local git repo to the remote gitHub repo
+
+
+
+
+
+
+
 
