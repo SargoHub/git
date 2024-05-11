@@ -1,0 +1,34 @@
+apt install git 
+  to install git on Ubuntu
+git --version
+  to check the version installed
+
+mkdir <nam>
+  to create a new directory
+git init 
+  to create a empty local git repository or reinitialise old one
+
+FOR THE FIRST TIME, WE NEED TO CONFIGURE USING
+git config --global user.name yourname
+git config --global user.email youremail
+git config --global core.editor editorname
+
+touch file.txt 
+  created a new file in the directory
+vi file.txt
+  to edit the file
+git status
+  to check the tracked/untracked files
+git add file.txt 
+  to push the file to the staging area ready to be committed 
+git commit -m "commit message"
+  to commit the changes done on the file 
+git log
+  to see the logs details
+git restore file.txt
+  to restore file right after the modification
+git restore --stagged file.txt
+git restore file.txt
+  to restore the stagged file
+
+
